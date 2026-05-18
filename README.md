@@ -127,6 +127,6 @@ This project has involved a huge amount of iteration, problem solving, and redes
 
 ### Software
 - CAD modeling software
-- Kirimoto CAM software
+- Kiri:Moto CAM software
 - gSender controller software
 - grblHAL firmware
