@@ -20,13 +20,13 @@ Some notable features include:
 - Steel linear rails for improved rigidity
 - Fully custom CAD-designed frame
 - Expandable design for future automatic tool changing
-- Enclosed electronics and chip management system
+- Enclosed electronics
 - Compact footprint while maintaining large travel distances
 
 Current planned build volume:
 - ~478.5 mm × 428.5 mm × 228.5 mm
 
----
+
 
 ## How to Use It
 
@@ -41,11 +41,11 @@ Most of the project development currently happens in CAD. We use CAD software to
 - Simulate the full machine assembly
 
 The machine is designed around:
-- 2020/2040 aluminum extrusions
+- 2020 aluminum extrusions
 - HGR20 linear rails
 - 1605 ball screws
 - NEMA 23 stepper motors
-- A spindle with a VFD power supply
+- A 2.2 kW spindle with a VFD power supply
 
 ### Planned Machine Workflow
 
@@ -82,13 +82,13 @@ To solve these problems, we:
 - Optimized the BOM to reduce costs
 - Experimented with safer enclosure materials like PVC instead of MDF in some areas
 
----
+
 
 ## Why We Made It
 
 We made this project because we wanted to build a CNC mill that was:
 - More affordable than commercial machines
-- Still capable of machining harder materials
+- Capable of machining harder materials (including aluminum and possibly steel)
 - Fully customizable
 - A platform for experimentation and learning
 
@@ -113,12 +113,12 @@ Another reason for building this machine was the opportunity to experiment with 
 
 This project has involved a huge amount of iteration, problem solving, and redesigning, but that process has also been one of the most rewarding parts of building it.
 
----
+
 
 ## Tech Stack
 
 ### Hardware
-- 2020/2040 aluminum extrusions
+- 2020 aluminum extrusions
 - Steel HGR20 linear rails
 - 1605 ball screws
 - NEMA 23 stepper motors
@@ -127,5 +127,6 @@ This project has involved a huge amount of iteration, problem solving, and redes
 
 ### Software
 - CAD modeling software
-- CAM software (planned)
-- CNC controller firmware/software (planned)
+- Kirimoto CAM software
+- gSender controller software
+- grblHAL firmware
