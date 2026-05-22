@@ -17,15 +17,15 @@ What makes this project unique is that we are trying to balance:
 Instead of buying an expensive commercial machine, we designed nearly every part ourselves, optimized the bill of materials to reduce costs, and iterated through many CAD revisions to solve mechanical problems like frame flexing, rail alignment, collisions between axes, and spindle mounting.
 
 Some notable features include:
-- Custom-designed 4-axis rotary system
+- 3 linear degrees of freedom and 1 rotational degree of freedom
 - Ball screw driven x-, y-, and z-axes for precision
-- Steel linear rails for improved rigidity
+- Steel linear rails for rigidity
 - Fully custom CAD-designed frame
 - Expandable design for future automatic tool changing
 - Enclosed electronics
 - Compact footprint while maintaining large travel distances
 
-Current planned build volume:
+Planned build volume:
 - ~478.5 mm × 428.5 mm × 228.5 mm
 
 
@@ -62,27 +62,6 @@ Once fully assembled, the CNC mill will work like this:
 7. Chips and debris are contained inside the enclosure
 
 The optional 4th axis will allow rotational machining for more complex parts.
-
-### Design Challenges We Solved
-
-During development, we encountered many engineering problems, including:
-- Axis collisions between the spindle frame and ball screws
-- Flexing in aluminum extrusion supports
-- Rail alignment inconsistencies
-- Limited z-axis travel for the 4th axis
-- Mounting solutions for the spindle and motors
-- Wire management across moving axes
-- Protecting rails and screws from machining debris
-- Material selection for machine panels and spoil boards
-
-To solve these problems, we:
-- Switched to stronger steel linear rails
-- Reinforced the frame with additional extrusions
-- Reworked axis geometry multiple times
-- Reduced unsupported spans to improve rigidity
-- Redesigned spindle mounting orientation
-- Optimized the BOM to reduce costs
-- Experimented with safer enclosure materials like PVC instead of MDF in some areas
 
 
 
