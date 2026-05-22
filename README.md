@@ -1,4 +1,4 @@
-<img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/4d5da87b-8c40-4f91-b9d2-67baa07b1601" />
+<img width="556" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/dd7a9096-393b-4c4c-a9d6-995bf443b3c7" />
 
 # Drill-Baby-Drill
 A custom-built 4-axis CNC mill designed from the ground up for precision metal machining, rigidity, and affordability.
