@@ -76,10 +76,8 @@ We made this project because we wanted to build a CNC mill that was:
 
 A major motivation was learning mechanical design and engineering through a real project instead of only studying theory. We wanted to understand:
 - CNC machine design
-- Motion systems
 - Ball screws and linear rails
 - Rigidity and structural engineering
-- CAD workflows
 - Manufacturing constraints
 - Cost optimization
 
@@ -95,20 +93,4 @@ Another reason for building this machine was the opportunity to experiment with 
 
 This project has involved a huge amount of iteration, problem solving, and redesigning, but that process has also been one of the most rewarding parts of building it.
 
-
-
-## Tech Stack
-
-### Hardware
-- 2020 aluminum extrusions
-- Steel HGR20 linear rails
-- 1605 ball screws
-- NEMA 23 stepper motors
-- VFD spindle system
-- Custom 4th axis chuck system
-
-### Software
-- CAD modeling software
-- Kiri:Moto CAM software
-- gSender controller software
-- grblHAL firmware
+## Wiring Diagram
