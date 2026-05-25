@@ -29,18 +29,6 @@ frame
 Planned build volume:
 - ~478.5 mm × 428.5 mm × 228.5 mm
 
-<img width="760" height="460" alt="Screenshot 2026-05-25 185421" src="https://github.com/user-attachments/assets/648e33d9-181c-427e-8c3e-fffc24cdb68e" /> 
-
-y-axis ballscrew
-
-<img width="350" height="684" alt="Screenshot 2026-05-25 185559" src="https://github.com/user-attachments/assets/4231a641-97a6-4863-a811-e10a8feef479" /> 
-
-x-axis
-
-<img width="172" height="649" alt="Screenshot 2026-05-25 185638" src="https://github.com/user-attachments/assets/8159f71b-2d3c-4f2f-95cb-00d9375c1558" /> 
-
-z-axis
-
 
 
 ## How to Use It
