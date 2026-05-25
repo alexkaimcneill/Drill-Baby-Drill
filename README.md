@@ -1,5 +1,3 @@
-<img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/86556efb-41e3-4257-b2b9-50340f9a2e8e" />
-
 # Drill-Baby-Drill
 A custom-built 4-axis CNC mill designed from the ground up for precision metal machining, rigidity, and affordability.
 
@@ -8,25 +6,34 @@ A custom-built 4-axis CNC mill designed from the ground up for precision metal m
 This project is a fully custom CNC milling machine that we designed in CAD and are building ourselves for Hack Club. The machine uses aluminum extrusions, ball screws, linear rails, a spindle system, and a custom-designed 4th axis attachment to create a compact but capable CNC mill.
 
 What makes this project unique is that we are trying to balance:
-- High rigidity
 - Metal machining capability
-- 4-axis functionality
+- 4 axes
 - Affordable components
 - Compact size
 
-Instead of buying an expensive commercial machine, we designed nearly every part ourselves, optimized the bill of materials to reduce costs, and iterated through many CAD revisions to solve mechanical problems like frame flexing, rail alignment, collisions between axes, and spindle mounting.
+Instead of buying an expensive commercial machine, we designed this mill ourselves, optimized the bill of materials to reduce costs, and made many CAD revisions to solve mechanical problems like frame flexing, rail alignment, collisions between axes, and spindle mounting.
 
 Some notable features include:
 - 3 linear degrees of freedom and 1 rotational degree of freedom
 - Ball screw driven x-, y-, and z-axes for precision
 - Steel linear rails for rigidity
-- Fully custom CAD-designed frame
+- Fully custom CAD-designed aluminum
+frame
 - Expandable design for future automatic tool changing
 - Enclosed electronics
 - Compact footprint while maintaining large travel distances
 
 Planned build volume:
 - ~478.5 mm × 428.5 mm × 228.5 mm
+
+<img width="760" height="460" alt="Screenshot 2026-05-25 185421" src="https://github.com/user-attachments/assets/648e33d9-181c-427e-8c3e-fffc24cdb68e" />
+y-axis
+
+<img width="350" height="684" alt="Screenshot 2026-05-25 185559" src="https://github.com/user-attachments/assets/4231a641-97a6-4863-a811-e10a8feef479" />
+x-axis
+
+<img width="172" height="649" alt="Screenshot 2026-05-25 185638" src="https://github.com/user-attachments/assets/8159f71b-2d3c-4f2f-95cb-00d9375c1558" />
+z-axis
 
 
 
