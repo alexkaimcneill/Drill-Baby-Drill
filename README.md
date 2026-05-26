@@ -59,7 +59,7 @@ The machine is designed around:
 - NEMA 23 stepper motors
 - A 2.2 kW spindle with a VFD power supply
 
-### Planned Machine Workflow
+### Usage
 
 Once fully assembled, the CNC mill will work like this:
 
