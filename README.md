@@ -120,3 +120,138 @@ This project has involved a huge amount of iteration, problem solving, and redes
 
 ## Wiring Diagram
 <img width="1543" height="1374" alt="CNC Wiring diagram (2)" src="https://github.com/user-attachments/assets/8a8e6997-1857-478c-b739-7a1e23534ef4" />
+
+
+
+# Aluminum Extrusion Cut List
+
+| Length (mm) | Quantity |
+|------------|----------|
+| 80 | 8 |
+| 115 | 1 |
+| 125.5 | 2 |
+| 147 | 4 |
+| 152.5 | 4 |
+| 155 | 4 |
+| 160.75 | 4 |
+| 190.25 | 2 |
+| 267 | 2 |
+| 350 | 4 |
+| 381 | 2 |
+| 486 | 6 |
+| 523.5 | 2 |
+| 570 | 3 |
+| 573.5 | 2 |
+| 590 | 1 |
+| 670 | 6 |
+| 700 | 8 |
+| 702 | 4 |
+| 900 | 4 |
+
+
+
+# Build Instructions
+
+## 1. Preparing the Aluminum Extrusions
+
+Cut all aluminum extrusions according to the cut list above.
+
+After cutting:
+- Deburr all edges
+- Ensure cuts are square
+- Clean chips from the internal channels
+
+Using an M6 tap, thread the ends of every extrusion piece to a depth of approximately 20 mm. These threaded holes will be used to fasten adjoining frame members together.
+
+
+
+## 2. Frame Assembly
+
+Assemble the machine frame according to the CAD model.
+
+To connect extrusions:
+1. Slide M6 screws into the T-slots of the aluminum extrusion
+2. Align the adjoining extrusion
+3. Fasten the screws into the tapped holes on the end of the adjacent extrusion
+4. Square and tighten the frame gradually to maintain alignment
+
+During assembly:
+- Avoid fully tightening components until the surrounding structure is aligned
+- Check that all mounting surfaces remain parallel
+
+
+
+## 3. Installing Linear Rails and Ball Screws
+
+Mount the HGR20 linear rails onto the frame using M5 screws and M5 T-nuts.
+
+When installing the rails:
+- Tighten screws gradually in alternating patterns
+- Verify rail parallelism before fully tightening
+- Ensure smooth carriage movement across the full travel distance
+
+Install the 1605 ball screws and bearing supports onto each axis.
+
+After installation:
+- Verify that the ball screws rotate freely
+- Check for binding or misalignment
+- Ensure couplers are centered between the motor shafts and ball screws
+
+
+
+## 4. Mounting the Spindle and Work Surface
+
+Install the spindle mount onto the Z-axis assembly and secure the 2.2 kW spindle in place.
+
+Attach the spoilboard and MDF side panels using M5 screws and T-nuts.
+
+Verify:
+- Spindle clearance throughout the full machine travel
+- No collisions between axes
+- Proper alignment between the spindle and spoilboard
+
+
+
+## 5. Electronics and Wiring
+
+Mount the following components inside the electronics enclosure:
+- Scylla v1 CNC controller
+- VFD
+- DC power supply
+
+Wire all components according to the wiring diagram.
+
+Important wiring considerations:
+- Leave sufficient slack in all motor and limit switch wiring to accommodate X-, Y-, and Z-axis movement
+- Secure cables to prevent interference with moving components
+- Separate signal and power wiring where possible to reduce electrical noise
+- Verify all grounding connections before powering the system
+
+
+
+## 6. Calibration and Testing
+
+After assembly:
+1. Manually move each axis to verify smooth motion
+2. Power on the electronics
+3. Test motor direction and limit switches
+4. Configure grblHAL settings
+5. Calibrate steps/mm for each axis
+6. Tram the spindle relative to the spoilboard
+7. Perform low-speed test cuts before full operation
+
+Recommended first tests:
+- Foam
+- MDF
+- Acrylic
+- Aluminum at conservative feed rates
+
+
+
+# Safety Notes
+
+- Always wear eye protection during operation
+- Ensure the spindle is properly grounded
+- Never leave the machine unattended while running
+- Verify emergency stop functionality before use
+- Contain chips and debris using the enclosure system
