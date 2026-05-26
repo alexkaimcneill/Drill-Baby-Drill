@@ -102,5 +102,21 @@ Another reason for building this machine was the opportunity to experiment with 
 
 This project has involved a huge amount of iteration, problem solving, and redesigning, but that process has also been one of the most rewarding parts of building it.
 
+## Tech Stack
+### Hardware
+- 2020 aluminum extrusions
+- Steel HGR20 linear rails
+- 1605 ball screws
+- NEMA 23 stepper motors
+- VFD spindle system
+- Custom 4th axis chuck system
+### Software
+- Onshape CAD software
+- Kiri:Moto CAM software
+- gSender controller software
+- grblHAL firmware
+
+
+
 ## Wiring Diagram
 <img width="1543" height="1374" alt="CNC Wiring diagram (2)" src="https://github.com/user-attachments/assets/8a8e6997-1857-478c-b739-7a1e23534ef4" />
