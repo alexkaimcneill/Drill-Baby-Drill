@@ -1,10 +1,10 @@
 <img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/3fbc36ce-5c98-432a-b5b9-2e6e4ab624a9" /> 
 
-<img width="664" height="685" alt="Screenshot 2026-05-25 200924" src="https://github.com/user-attachments/assets/6676d57d-3494-40df-b22f-1dde3bd122be" /> 
+<img width="655" height="678" alt="Screenshot 2026-05-25 201110" src="https://github.com/user-attachments/assets/1c5a517b-d5eb-4ad1-8d41-7e53f1e1b9c4" /> 
 
 Trimetric view (with side panel removed)
 
-<img width="454" height="545" alt="Screenshot 2026-05-25 195921" src="https://github.com/user-attachments/assets/e60f96b3-f71c-4e6a-a884-35fe69d35f81" /> 
+<img width="615" height="735" alt="Screenshot 2026-05-25 201128" src="https://github.com/user-attachments/assets/27c5291a-2f86-4015-96e8-a23381fa8fcf" /> 
 
 Profile view (with side panel removed)
 
