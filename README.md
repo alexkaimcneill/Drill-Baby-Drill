@@ -1,5 +1,4 @@
-<img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/b2e5a192-5429-4793-925a-c1a1491c511f" />
-
+<img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/d3af20bb-c887-4368-bd10-3056c63f5311" />
 
 <img width="655" height="678" alt="Screenshot 2026-05-25 201110" src="https://github.com/user-attachments/assets/1c5a517b-d5eb-4ad1-8d41-7e53f1e1b9c4" /> 
 
