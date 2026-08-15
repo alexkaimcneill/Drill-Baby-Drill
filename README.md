@@ -1,132 +1,99 @@
 <img width="540" height="828" alt="Drill, Baby, Drill Fallout Zine" src="https://github.com/user-attachments/assets/d3af20bb-c887-4368-bd10-3056c63f5311" />
 
-<img width="655" height="678" alt="Screenshot 2026-05-25 201110" src="https://github.com/user-attachments/assets/1c5a517b-d5eb-4ad1-8d41-7e53f1e1b9c4" /> 
+<img width="655" height="678" alt="Screenshot 2026-05-25 201110" src="https://github.com/user-attachments/assets/1c5a517b-d5eb-4ad1-8d41-7e53f1e1b9c4" />
 
-Trimetric view (with side panel removed)
+Trimetric view (side panel removed)
 
-<img width="615" height="735" alt="Screenshot 2026-05-25 201128" src="https://github.com/user-attachments/assets/27c5291a-2f86-4015-96e8-a23381fa8fcf" /> 
+<img width="615" height="735" alt="Screenshot 2026-05-25 201128" src="https://github.com/user-attachments/assets/27c5291a-2f86-4015-96e8-a23381fa8fcf" />
 
-Profile view (with side panel removed)
-
-
+Profile view (side panel removed)
 
 # Drill-Baby-Drill
-A custom-built 4-axis CNC mill designed from the ground up for precision metal machining, rigidity, and affordability.
 
-## What is this?
+A 4-axis CNC mill we're designing and building from scratch for Hack Club, built to actually cut metal without costing what a commercial machine costs.
 
-This project is a fully custom CNC milling machine that we designed in CAD and are building ourselves for Hack Club. The machine uses aluminum extrusions, ball screws, linear rails, a spindle system, and a custom-designed 4th axis attachment to create a compact but capable CNC mill.
+## What is this
 
-What makes this project unique is that we are trying to balance:
-- Metal machining capability
-- 4 axes
-- Affordable components
-- Compact size
+This isn't a router that flexes the second you look at aluminum wrong. It's a real CNC mill: aluminum extrusion frame, ball screws, linear rails, a spindle system, and a 4th axis attachment we designed ourselves. We modeled the whole thing in CAD and we're building it piece by piece.
 
-Instead of buying an expensive commercial machine, we designed this mill ourselves, optimized the bill of materials to reduce costs, and made many CAD revisions to solve mechanical problems like frame flexing, rail alignment, collisions between axes, and spindle mounting.
+The hard part is doing four things at once: cutting metal, running 4 axes, keeping the BOM cheap, and keeping the footprint small. Machines that hit all four cost more than we had, so we designed our own. That meant reworking the BOM over and over to cut cost, and a long stack of CAD revisions to fix frame flex, rail alignment, axis collisions, and spindle mounting.
 
-Some notable features include:
-- 3 linear degrees of freedom and 1 rotational degree of freedom
-- Ball screw driven x-, y-, and z-axes for precision
+Specs:
+- 3 linear axes + 1 rotational axis
+- Ball screw driven X, Y, Z
 - Steel linear rails for rigidity
-- Fully custom CAD-designed aluminum
-frame
-- Expandable design for future automatic tool changing
+- Fully custom aluminum frame, designed in CAD
+- Room to add auto tool changing later
 - Enclosed electronics
-- Compact footprint while maintaining large travel distances
+- Small footprint, long travel
 
-Planned build volume:
-- ~478.5 mm × 428.5 mm × 228.5 mm
+Build volume: 478.5 mm × 428.5 mm × 228.5 mm
 
+## How to use it
 
+### CAD and design
 
-## How to Use It
+Right now most of the real work happens in CAD, not the shop. We use it to:
 
-### CAD and Design
+- design the frame
+- place the axes
+- check motion and clearance
+- catch collisions before we cut anything
+- mount motors, rails, and screws
+- run the full assembly as a simulation
 
-Most of the project development currently happens in CAD. We use CAD software to:
-- Design the frame
-- Position the axes
-- Test motion and clearances
-- Prevent collisions between parts
-- Mount motors, rails, and ball screws
-- Simulate the full machine assembly
+Parts we designed around: 2020 aluminum extrusion, HGR20 linear rails, 1605 ball screws, NEMA 23 steppers, and a 2.2 kW spindle on a VFD.
 
-The machine is designed around:
-- 2020 aluminum extrusions
-- HGR20 linear rails
-- 1605 ball screws
-- NEMA 23 stepper motors
-- A 2.2 kW spindle with a VFD power supply
+### Running it
 
-### Usage
+Once it's built, here's the loop:
 
-Once fully assembled, the CNC mill will work like this:
+1. clamp material to the spoilboard or the rotary axis
+2. load a tool in the spindle
+3. generate toolpaths in CAM
+4. send G-code to the controller
+5. the machine drives X, Y, and Z on ball screws and linear rails
+6. the spindle cuts while the frame holds rigid
+7. the enclosure keeps chips where they belong
 
-1. Secure material onto the spoil board or rotary axis
-2. Load a tool into the spindle
-3. Generate toolpaths using CAM software
-4. Send G-code to the CNC controller
-5. The machine moves along the x-, y-, and z-axes using ball screws and linear rails
-6. The spindle cuts the material while the frame maintains rigidity
-7. Chips and debris are contained inside the enclosure
+The 4th axis adds rotational machining for parts a 3-axis mill can't touch.
 
-The optional 4th axis will allow rotational machining for more complex parts.
+## Why we built it
 
+We wanted a CNC mill that's cheaper than a commercial one, can actually cut aluminum and maybe steel, and is ours to modify however we want.
 
+The bigger reason: we wanted to learn mechanical design by building something real instead of just reading about it. That meant figuring out ball screws and linear rails, rigidity and structural design, what's actually manufacturable, and how to cut cost without cutting corners.
 
-## Why We Made It
+We also wanted to build something harder than the usual hobby CNC project. Most hobby machines flex too much or lose precision the moment you try to cut metal, so a lot of our time went into stiffening the frame and killing flex.
 
-We made this project because we wanted to build a CNC mill that was:
-- More affordable than commercial machines
-- Capable of machining harder materials (including aluminum and possibly steel)
-- Fully customizable
-- A platform for experimentation and learning
+Along the way we're also experimenting with auto tool changing, coolant, 4-axis machining, custom spindle mounting, chip containment, and frames that are rigid without being huge.
 
-A major motivation was learning mechanical design and engineering through a real project instead of only studying theory. We wanted to understand:
-- CNC machine design
-- Ball screws and linear rails
-- Rigidity and structural engineering
-- Manufacturing constraints
-- Cost optimization
+It's been a lot of redesigns and a lot of problem solving, and that's also been the most fun part of the whole build.
 
-We also wanted to challenge ourselves by creating something significantly more advanced than a typical beginner CNC project. Many hobby CNC machines struggle with rigidity or precision, especially when machining metals, so a large focus of our work has been improving stiffness and reducing flex.
+## Tech stack
 
-Another reason for building this machine was the opportunity to experiment with advanced ideas like:
-- Automatic tool changing systems
-- Coolant systems
-- 4-axis machining
-- Custom spindle mounting
-- Chip protection systems
-- Compact but rigid frame geometries
-
-This project has involved a huge amount of iteration, problem solving, and redesigning, but that process has also been one of the most rewarding parts of building it.
-
-## Tech Stack
-### Hardware
-- 2020 aluminum extrusions
+**Hardware**
+- 2020 aluminum extrusion
 - Steel HGR20 linear rails
 - 1605 ball screws
-- NEMA 23 stepper motors
+- NEMA 23 steppers
 - VFD spindle system
-- Custom 4th axis chuck system
-### Software
-- Onshape CAD software
-- Kiri:Moto CAM software
-- gSender controller software
-- grblHAL firmware
+- Custom 4th axis chuck
 
+**Software**
+- Onshape (CAD)
+- Kiri:Moto (CAM)
+- gSender (controller)
+- grblHAL (firmware)
 
+## Wiring diagram
 
-## Wiring Diagram
-<img width="1543" height="1374" alt="CNC Wiring diagram (2)" src="https://github.com/user-attachments/assets/8a8e6997-1857-478c-b739-7a1e23534ef4" />
+<img width="1543" height="1374" alt="CNC Wiring diagram" src="https://github.com/user-attachments/assets/8a8e6997-1857-478c-b739-7a1e23534ef4" />
 
-
-
-# Aluminum Extrusion Cut List
+## Aluminum extrusion cut list
 
 | Length (mm) | Quantity |
-|------------|----------|
+|---|---|
 | 80 | 8 |
 | 115 | 1 |
 | 125.5 | 2 |
@@ -148,110 +115,64 @@ This project has involved a huge amount of iteration, problem solving, and redes
 | 702 | 4 |
 | 900 | 4 |
 
+## Build instructions
 
+### 1. Cut the extrusions
 
-# Build Instructions
+Cut everything on the list above. Deburr every edge, make sure the cuts are square, and clean the chips out of the internal channels.
 
-## 1. Preparing the Aluminum Extrusions
+Tap the ends of every piece with an M6 tap, about 20 mm deep. That's what holds the frame together.
 
-Cut all aluminum extrusions according to the cut list above.
+### 2. Frame assembly
 
-After cutting:
-- Deburr all edges
-- Ensure cuts are square
-- Clean chips from the internal channels
+Build the frame off the CAD model. To join two extrusions:
 
-Using an M6 tap, thread the ends of every extrusion piece to a depth of approximately 20 mm. These threaded holes will be used to fasten adjoining frame members together.
+1. slide M6 screws into the T-slot
+2. line up the next extrusion
+3. thread the screws into the tapped holes on its end
+4. square up the frame and tighten gradually as you go
 
+Don't crank anything down fully until the surrounding structure is aligned. Check that mounting faces stay parallel as you tighten.
 
+### 3. Linear rails and ball screws
 
-## 2. Frame Assembly
+Mount the HGR20 rails with M5 screws and T-nuts. Tighten in an alternating pattern and check parallelism before fully tightening. Carriages should move smooth across the whole travel, if they don't, something's off.
 
-Assemble the machine frame according to the CAD model.
+Install the 1605 ball screws and bearing supports on each axis. After they're in, spin them by hand, check for binding or misalignment, and make sure the couplers are centered between motor shaft and screw.
 
-To connect extrusions:
-1. Slide M6 screws into the T-slots of the aluminum extrusion
-2. Align the adjoining extrusion
-3. Fasten the screws into the tapped holes on the end of the adjacent extrusion
-4. Square and tighten the frame gradually to maintain alignment
+### 4. Spindle and work surface
 
-During assembly:
-- Avoid fully tightening components until the surrounding structure is aligned
-- Check that all mounting surfaces remain parallel
+Mount the spindle to the Z-axis and bolt in the 2.2 kW spindle. Attach the spoilboard and MDF side panels with M5 screws and T-nuts.
 
+Check spindle clearance through the full travel, make sure nothing collides between axes, and confirm the spindle lines up with the spoilboard.
 
+### 5. Electronics and wiring
 
-## 3. Installing Linear Rails and Ball Screws
+Inside the enclosure: Scylla v1 controller, VFD, and DC power supply. Wire it per the diagram above.
 
-Mount the HGR20 linear rails onto the frame using M5 screws and M5 T-nuts.
+A few things that actually matter here:
 
-When installing the rails:
-- Tighten screws gradually in alternating patterns
-- Verify rail parallelism before fully tightening
-- Ensure smooth carriage movement across the full travel distance
+- leave slack in motor and limit switch wiring so it doesn't yank when X, Y, Z move
+- secure cables so nothing snags on moving parts
+- keep signal and power wiring apart where you can, it cuts noise
+- check every ground before you power anything on
 
-Install the 1605 ball screws and bearing supports onto each axis.
+### 6. Calibration and testing
 
-After installation:
-- Verify that the ball screws rotate freely
-- Check for binding or misalignment
-- Ensure couplers are centered between the motor shafts and ball screws
+1. move each axis by hand, check it's smooth
+2. power on the electronics
+3. check motor direction and limit switches
+4. configure grblHAL
+5. calibrate steps/mm on each axis
+6. tram the spindle to the spoilboard
+7. run slow test cuts before anything at full speed
 
+First cuts to try: foam, MDF, acrylic, then aluminum at conservative feeds.
 
+## Safety
 
-## 4. Mounting the Spindle and Work Surface
-
-Install the spindle mount onto the Z-axis assembly and secure the 2.2 kW spindle in place.
-
-Attach the spoilboard and MDF side panels using M5 screws and T-nuts.
-
-Verify:
-- Spindle clearance throughout the full machine travel
-- No collisions between axes
-- Proper alignment between the spindle and spoilboard
-
-
-
-## 5. Electronics and Wiring
-
-Mount the following components inside the electronics enclosure:
-- Scylla v1 CNC controller
-- VFD
-- DC power supply
-
-Wire all components according to the wiring diagram.
-
-Important wiring considerations:
-- Leave sufficient slack in all motor and limit switch wiring to accommodate X-, Y-, and Z-axis movement
-- Secure cables to prevent interference with moving components
-- Separate signal and power wiring where possible to reduce electrical noise
-- Verify all grounding connections before powering the system
-
-
-
-## 6. Calibration and Testing
-
-After assembly:
-1. Manually move each axis to verify smooth motion
-2. Power on the electronics
-3. Test motor direction and limit switches
-4. Configure grblHAL settings
-5. Calibrate steps/mm for each axis
-6. Tram the spindle relative to the spoilboard
-7. Perform low-speed test cuts before full operation
-
-Recommended first tests:
-- Foam
-- MDF
-- Acrylic
-- Aluminum at conservative feed rates
-
-
-
-# Safety Notes
-
-- Always wear eye protection during operation
-- Ensure the spindle is properly grounded
-- Never leave the machine unattended while running
-- Verify emergency stop functionality before use
-- Contain chips and debris using the enclosure system
+- wear eye protection, every time
+- ground the spindle properly
+- never leave it running unattended
+- check the e-stop works before you use the machine
+- keep the enclosure closed to contain chips
