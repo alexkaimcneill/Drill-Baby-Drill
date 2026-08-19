@@ -1,4 +1,5 @@
-[Drill, Baby, Drill Fallout Zine.pdf](https://github.com/user-attachments/files/31206520/Drill.Baby.Drill.Fallout.Zine.pdf)
+![Drill, Baby, Drill Zine](https://github.com/alexkaimcneill/Drill-Baby-Drill/blob/main/Drill%2C%20Baby%2C%20Drill%20Fallout%20Zine.pdf)
+****
 
 
 <img width="655" height="678" alt="Screenshot 2026-05-25 201110" src="https://github.com/user-attachments/assets/1c5a517b-d5eb-4ad1-8d41-7e53f1e1b9c4" />
