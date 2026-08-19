@@ -176,3 +176,7 @@ First cuts to try: foam, MDF, acrylic, then aluminum at conservative feeds.
 - never leave it running unattended
 - check the e-stop works before you use the machine
 - keep the enclosure closed to contain chips
+
+## Demonstration
+
+[![Watch the video](https://img.youtube.com/vi/KmNqm5aDeno/maxresdefault.jpg)](https://youtu.be/KmNqm5aDeno)
